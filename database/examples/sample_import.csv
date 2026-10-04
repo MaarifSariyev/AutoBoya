@@ -1,0 +1,16 @@
+brand,model,year,color_code,color_name,color_type,paint_system,variant,component_code,component_name,amount,unit
+Toyota,Camry,2021,1G3,Magnetic Gray,Metallic,Basecoat,Standard,B001,White Base,350.00,g
+Toyota,Camry,2021,1G3,Magnetic Gray,Metallic,Basecoat,Standard,B014,Black,220.00,g
+Toyota,Camry,2021,1G3,Magnetic Gray,Metallic,Basecoat,Standard,M003,Metallic,180.00,g
+Toyota,Camry,2021,1G3,Magnetic Gray,Metallic,Basecoat,Standard,K002,Deep Blue Toner,100.00,g
+Toyota,Camry,2021,1G3,Magnetic Gray,Metallic,Basecoat,Standard,X001,Transparent Binder,150.00,g
+Mercedes-Benz,E-Class,2022,197,Obsidian Black,Metallic,Basecoat,Standard,B014,Black,750.00,g
+Mercedes-Benz,E-Class,2022,197,Obsidian Black,Metallic,Basecoat,Standard,M003,Metallic,150.00,g
+Mercedes-Benz,E-Class,2022,197,Obsidian Black,Metallic,Basecoat,Standard,X001,Transparent Binder,100.00,g
+BMW,3 Series,2021,300,Alpine White,Solid,Basecoat,Standard,B001,White Base,920.00,g
+BMW,3 Series,2021,300,Alpine White,Solid,Basecoat,Standard,B014,Black,25.00,g
+BMW,3 Series,2021,300,Alpine White,Solid,Basecoat,Standard,K008,Yellow Oxide,35.00,g
+BMW,3 Series,2021,300,Alpine White,Solid,Basecoat,Standard,X001,Transparent Binder,20.00,g
+Kia,Optima,2020,SWP,Snow White Pearl,Pearl,Basecoat,Standard,B001,White Base,950.00,g
+Kia,Optima,2020,SWP,Snow White Pearl,Pearl,Basecoat,Standard,P001,Fine White Pearl,30.00,g
+Kia,Optima,2020,SWP,Snow White Pearl,Pearl,Basecoat,Standard,X001,Transparent Binder,20.00,g
