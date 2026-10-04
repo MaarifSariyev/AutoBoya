@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { getFormula, calculateFormula } from "@/lib/api";
+import { API_URL, getFormula, calculateFormula } from "@/lib/api";
 import { ArrowLeft, Calculator, Download, CheckCircle, Clock, AlertCircle } from "lucide-react";
 
 interface Component {
@@ -81,7 +81,7 @@ export default function FormulaDetail({ id }: { id: number }) {
 
   const handlePdf = () => {
     window.open(
-      `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"}/api/formulas/${id}/pdf`,
+      `${API_URL}/api/formulas/${id}/pdf`,
       "_blank"
     );
   };

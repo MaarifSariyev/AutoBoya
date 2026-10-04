@@ -1,17 +1,17 @@
 # Deployment
 
-This repository contains a Next.js frontend and a FastAPI/PostgreSQL backend. Vercel hosts the frontend; deploy the API and PostgreSQL to a separate service that supports persistent databases and Python containers.
+This repository contains a Next.js frontend and a FastAPI/PostgreSQL backend. Vercel can deploy the frontend and API as a multi-service project; PostgreSQL still needs a managed provider with persistent storage.
 
 ## Deploy the frontend to Vercel
 
 1. Import `MaarifSariyev/AutoBoya` in Vercel.
-2. Set the project Root Directory to `frontend` and keep the Next.js framework preset.
-3. Add `NEXT_PUBLIC_API_URL` as an environment variable for Production, Preview, and Development. Set it to the public backend origin, for example `https://api.example.com`, without a trailing slash.
-4. Deploy.
+2. Keep the repository root selected. `vercel.json` defines `frontend` and `backend` services and routes `/api/*` requests to FastAPI.
+3. Provision a managed PostgreSQL database and add `DATABASE_URL`, `SECRET_KEY`, `ADMIN_EMAIL`, `ADMIN_PASSWORD`, `ENVIRONMENT=production`, and `CORS_ORIGINS` to the Vercel project environment. Use a unique secret key (at least 32 characters) and unique admin password (at least 12 characters).
+4. Deploy. The frontend uses same-origin `/api` requests, so it does not need a separate `NEXT_PUBLIC_API_URL` in Vercel.
 
 ## Deploy the backend
 
-Deploy the `backend` directory using its Dockerfile, and provision a PostgreSQL database with persistent storage. Configure these backend environment variables in the hosting provider:
+For a non-Vercel backend host, deploy the `backend` directory using its Dockerfile and configure these environment variables:
 
 - `DATABASE_URL`: the provider's PostgreSQL connection URL
 - `SECRET_KEY`: a fresh, random secret of at least 32 characters

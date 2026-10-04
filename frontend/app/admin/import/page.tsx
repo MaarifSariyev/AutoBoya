@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { importPreview, importConfirm } from "@/lib/api";
+import { API_URL, importPreview, importConfirm } from "@/lib/api";
 import { Upload, CheckCircle, AlertCircle, Download } from "lucide-react";
 
 interface PreviewItem {
@@ -68,7 +68,7 @@ export default function ImportPage() {
     }
   };
 
-  const templateUrl = `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"}/api/admin/import/template`;
+  const templateUrl = `${API_URL}/api/admin/import/template`;
 
   return (
     <div className="max-w-3xl">
